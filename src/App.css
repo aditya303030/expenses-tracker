@@ -1,9 +1,44 @@
+body {
+  margin: 1rem;
+  background-color: aliceblue;
+}
+
 .header-container {
   display: flex;
   justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   justify-content: center;
+}
+
+.expense-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin:10px;
+  background-color: rgb(125, 125, 231);
+}
+
+.input-text {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  padding: 10px;
+}
+
+.expense-button:hover {
+  opacity: 0.5;
 }
