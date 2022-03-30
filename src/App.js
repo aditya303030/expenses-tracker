@@ -7,14 +7,16 @@ function App() {
   //states
   const [inputText,setInputText] = useState("");
   const [expense,setExpense] = useState([]);
-  // const [] = ([])
+  const [amount,setAmount] = useState([]);
+  const [currentAmount,setCurrentAmount] = useState([]);
+  
   return (
     <div className="header-container">
       <div className='header'>
         <h1>Expenses tracker</h1>
       </div>
-      <Form expense ={expense} setExpense = {setExpense} inputText = {inputText} setInputText={setInputText} />
-      <ExpenseList expense = {expense} />
+      <Form currentAmount={currentAmount} amount={amount} setCurrentAmount={setCurrentAmount} setAmount = {setAmount} expense ={expense} setExpense = {setExpense} inputText = {inputText} setInputText={setInputText} />
+      <ExpenseList setExpense={setExpense} amount = {amount} expense = {expense} />
     </div>
   );
 }
