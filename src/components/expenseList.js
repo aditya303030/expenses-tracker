@@ -8,8 +8,8 @@ const ExpenseList = ({expense,setExpense}) => {
 
           // <Expense text = {expense_name.text} expense_amount={expense_name.expense_amount} />
           <ul className="expense" key={expense_name.id}>
-            <li className="expenses expense-name">{expense_name.expense_amount}</li>
             <li className="expenses expense-amount">{expense_name.text}</li>
+            <li className="expenses expense-name">{expense_name.expense_amount}</li>
           </ul>
         ))}
       </ul>

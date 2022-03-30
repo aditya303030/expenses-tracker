@@ -7,8 +7,9 @@ function App() {
   //states
   const [inputText,setInputText] = useState("");
   const [expense,setExpense] = useState([]);
-  const [amount,setAmount] = useState([]);
+  const [amount,setAmount] = useState();
   const [currentAmount,setCurrentAmount] = useState([]);
+  // const []
   
   return (
     <div className="header-container">
