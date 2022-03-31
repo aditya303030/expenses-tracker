@@ -23,7 +23,7 @@ function App() {
         <h1>Expenses tracker</h1>
       </div>
       <Form currentAmount={currentAmount} amount={amount} setCurrentAmount={setCurrentAmount} setAmount = {setAmount} expense ={expense} setExpense = {setExpense} inputText = {inputText} setInputText={setInputText} />
-      <ExpenseList setExpense={setExpense} amount = {amount} expense = {expense} />
+      <ExpenseList setExpense={setExpense} amount = {amount} setAmount={setAmount} expense = {expense} />
       <div className='total-amount-container'>
         <div className='total-amount'>Total expenditure: {total_amount}</div>
       </div>

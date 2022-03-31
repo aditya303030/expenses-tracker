@@ -50,7 +50,8 @@ body {
   list-style-type: none;
 }
 
-.expenses {
+.expense-name,
+.expense-amount {
   background-color: aquamarine;
   padding: 0.5rem;
   border-radius: 5px;
@@ -73,4 +74,9 @@ body {
 
 .btn:hover {
   opacity: 0.5;
+}
+
+.paid {
+  opacity: 0.5;
+  text-decoration: line-through;
 }

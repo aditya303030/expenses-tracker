@@ -14,7 +14,7 @@ const Form = ({setInputText,inputText,setExpense,expense,setAmount,amount,curren
     const submitInputHandler = (e) => {
         e.preventDefault();
         setExpense([
-            ...expense,{text:inputText,expense_amount:amount,necessary:false,id:Math.random()}
+            ...expense,{text:inputText,expense_amount:amount,necessary:false,id:Math.random()*1000,paid:false}
         ])
         setCurrentAmount([
             ...currentAmount,{currentvalue:amount}
