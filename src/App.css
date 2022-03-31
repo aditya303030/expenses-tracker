@@ -56,3 +56,21 @@ body {
   border-radius: 5px;
   margin: 0.5rem;
 }
+
+.total-amount-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 10px;
+  height: 30px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}

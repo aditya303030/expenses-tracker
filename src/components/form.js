@@ -23,19 +23,13 @@ const Form = ({setInputText,inputText,setExpense,expense,setAmount,amount,curren
         setInputText("");
         setAmount("");
     }
-
-    const currentAmountHandler = () => {
-        return Object.values(currentAmount).reduce((total, value) => total + value, 0)
-        
-    }
-    console.log(currentAmountHandler())
+    
     return (
         <form className="expense-form">
             <input placeholder="Add expense" onChange={inputTextHandler} className="input-text" value={inputText}/>
             <input placeholder="Amount" onChange={inputAmountHandler} className="input-text" /> 
-            <p className="w-32 border p-1">{currentAmountHandler()}</p>
             <button onClick={submitInputHandler} type="submit" className="expense-button">
-                <i className="fas fa-plus-square" >Add</i>
+                <i className="fas fa-plus-square" ></i>
             </button>
             <select className="expense-select">
                 <option value="all">All</option>
