@@ -26,8 +26,8 @@ const Form = ({setInputText,inputText,setExpense,expense,setAmount,amount,curren
     
     return (
         <form className="expense-form">
-            <input placeholder="Add expense" onChange={inputTextHandler} className="input-text" value={inputText}/>
-            <input placeholder="Amount" onChange={inputAmountHandler} className="input-text" /> 
+            <input placeholder="Add expense" onChange={inputTextHandler} className="input input-text" value={inputText}/>
+            <input placeholder="Amount" onChange={inputAmountHandler} className="input input-text" /> 
             <button onClick={submitInputHandler} type="submit" className="expense-button">
                 <i className="fas fa-plus-square" ></i>
             </button>

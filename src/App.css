@@ -31,12 +31,13 @@ body {
   background-color: rgb(125, 125, 231);
 }
 
-.input-text {
+.input {
   border: none;
   border-radius: 5px;
   height: 30px;
   width: 200px;
   padding: 10px;
+  margin: 10px;
 }
 
 .expense-button:hover {
