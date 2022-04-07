@@ -12,6 +12,10 @@ const Expense = ({expense,expense_name,setExpense,currentAmount}) => {
     }))
   }
 
+  // const deleteHandler = () => {
+  //   setExpense(expense.filter((item) =>item.id !==expense_name.id)) 
+  // }
+
   const deleteHandler = () => {
     setExpense(expense.filter((item) =>item.id !==expense_name.id))
   }
@@ -19,17 +23,18 @@ const Expense = ({expense,expense_name,setExpense,currentAmount}) => {
   let total_amount = 0;
   for(let i=0;i<currentAmount.length;i++) {
     for(const [key,value] of Object.entries(currentAmount[i])){
-      if(deleteHandler) {
-        total_amount+=parseInt(value)
+      if(!deleteHandler) {  
+        total_amount-=parseInt(value)
+        console.log('deleted')
       }
       else {
         console.log(key)
         console.log(value)
-        total_amount-=parseInt(value)
+        total_amount+=parseInt(value)
       }
     }
   }
-
+  console.log(currentAmount)
   return (
     <>
       <ul className="expense" >
