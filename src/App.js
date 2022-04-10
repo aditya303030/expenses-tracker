@@ -1,5 +1,8 @@
 import React,{useState} from 'react';
 import './App.css';
+import Header from './components/header';
+import Balance from './components/balance';
+import { Expenses } from './components/expenses';
 
 function App() {
   //states
@@ -21,8 +24,10 @@ function App() {
   // }
   return (
     <div className="header-container">
-      <div className='header'>
-        <h1>Expenses tracker</h1>
+      <Header />
+      <div className='container'>
+        <Balance />
+        <Expenses />
       </div>
     </div>
   );
