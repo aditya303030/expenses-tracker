@@ -5,12 +5,25 @@ body {
   justify-content: center;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
 .header-container {
   display: flex;
   justify-content: center;
   font-family: 'Raleway', sans-serif;
   flex-direction: column;
 }
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
 
 .header {
   display: flex;
@@ -33,14 +46,14 @@ body {
   background-color: rgb(125, 125, 231);
 }
 
-.input {
+/* .input {
   border: none;
   border-radius: 5px;
   height: 30px;
   width: 200px;
   padding: 10px;
   margin: 10px;
-}
+} */
 
 .expense-button:hover {
   opacity: 0.5;
@@ -67,12 +80,11 @@ body {
 }
 
 .btn {
-  margin: 10px;
-  height: 30px;
-  width: 50px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  width: 100%;
+  height: 25px;
+  background-color: #2ecc71;
 }
 
 .btn:hover {
@@ -114,4 +126,67 @@ body {
 
 .money.minus {
   color: #c0392b;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  box-shadow:
+  8.6px 15.3px 18.2px rgba(0, 0, 0, 0.035),
+  69px 122px 145px rgba(0, 0, 0, 0.07);
 }
